@@ -53,10 +53,10 @@ a:hover {
 
 .header-inner {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
-  gap: 1rem;
-  padding: 0.85rem 0;
+  gap: 0.7rem;
+  padding: 0.7rem 0;
 }
 
 .brand {
@@ -68,16 +68,18 @@ a:hover {
 }
 
 .brand-logo {
-  height: 64px;
+  height: 129px;
   width: auto;
   flex: 0 0 auto;
   display: block;
+  margin-bottom: 8px;
 }
 
 .brand-text {
   font-weight: 700;
   font-size: 2.2rem;
   letter-spacing: 0.01em;
+  display: none;
 }
 
 .nav-list {
@@ -134,9 +136,11 @@ a:hover {
 
 .badges {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
+  flex-wrap: nowrap;
+  gap: 0.45rem;
   margin-top: 0.9rem;
+  overflow-x: auto;
+  scrollbar-width: thin;
 }
 
 .badge {
@@ -144,9 +148,11 @@ a:hover {
   color: #11455c;
   border: 1px solid #bfdeea;
   border-radius: 999px;
-  padding: 0.28rem 0.72rem;
-  font-size: 0.9rem;
+  padding: 0.22rem 0.55rem;
+  font-size: 0.82rem;
   font-weight: 600;
+  white-space: nowrap;
+  flex: 0 0 auto;
 }
 
 .grid {
@@ -191,7 +197,8 @@ a:hover {
   justify-content: center;
   width: 1.55rem;
   height: 1.55rem;
-  margin-bottom: 0.45rem;
+  margin-bottom: 0.55rem;
+  margin-right: 0.35rem;
   border-radius: 999px;
   background: var(--brand);
   color: #fff;
@@ -265,6 +272,7 @@ a:hover {
   .header-inner {
     align-items: flex-start;
     flex-direction: column;
+    gap: 0.25rem;
   }
 
   .brand {
@@ -274,7 +282,8 @@ a:hover {
   }
 
   .brand-logo {
-    height: 52px;
+    height: 105px;
+    margin-bottom: 6px;
   }
 
   .brand-text {
@@ -294,7 +303,8 @@ a:hover {
 
 @media (max-width: 430px) {
   .brand-logo {
-    height: 44px;
+    height: 89px;
+    margin-bottom: 4px;
   }
 
   .brand-text {
@@ -312,3 +322,32 @@ a:hover {
   line-height: 1.2;
   letter-spacing: 0.01em;
 }
+
+.header-inner .nav-list {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 760px) {
+  .header-inner .nav-list {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+}
+
+
+.tight-lines p {
+  margin: 0.2rem 0;
+  line-height: 1.35;
+}
+
+.tight-lines p:first-of-type {
+  margin-top: 0.15rem;
+}
+
+
+.steps li p {
+  margin: 0.35rem 0 0;
+}
+
+
