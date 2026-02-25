@@ -267,13 +267,19 @@ a:hover {
     flex-direction: column;
   }
 
+  .brand {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
   .brand-logo {
     height: 52px;
   }
 
   .brand-text {
-    font-size: 1.55rem;
-    line-height: 1.1;
+    font-size: 1.85rem;
+    line-height: 1.05;
     overflow-wrap: anywhere;
   }
 
@@ -292,7 +298,7 @@ a:hover {
   }
 
   .brand-text {
-    font-size: 1.3rem;
+    font-size: 1.55rem;
   }
 }
 
