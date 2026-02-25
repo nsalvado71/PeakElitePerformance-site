@@ -1,0 +1,144 @@
+:root {
+  --bg: #f6f8fb;
+  --surface: #ffffff;
+  --text: #16202a;
+  --muted: #556270;
+  --line: #d9e1e8;
+  --brand: #0f4c81;
+  --brand-dark: #0b365d;
+  --max: 980px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+}
+
+a {
+  color: var(--brand);
+}
+
+a:hover {
+  color: var(--brand-dark);
+}
+
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+
+.header-inner,
+.main,
+.footer-inner {
+  width: min(100% - 2rem, var(--max));
+  margin: 0 auto;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 0;
+  gap: 1rem;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.main {
+  padding: 2rem 0;
+}
+
+.card,
+.hero {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1.4rem;
+}
+
+.hero h2 {
+  margin-top: 0;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.section {
+  margin-top: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.notice {
+  border-left: 4px solid var(--brand);
+  background: #edf4fb;
+  padding: 0.9rem 1rem;
+  margin: 1rem 0;
+}
+
+.site-footer {
+  margin-top: 2rem;
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+}
+
+.footer-inner {
+  padding: 1.2rem 0 1.8rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-list {
+  padding-left: 1.1rem;
+}
+
+.post-meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 620px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    gap: 0.7rem;
+  }
+}
