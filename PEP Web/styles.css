@@ -327,6 +327,17 @@ a:hover {
   .nav-list a {
     font-size: 0.82rem;
   }
+
+  .badges {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    gap: 0.3rem;
+  }
+
+  .badge {
+    font-size: 0.7rem;
+    padding: 0.16rem 0.42rem;
+  }
 }
 
 
