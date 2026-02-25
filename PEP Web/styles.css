@@ -267,8 +267,32 @@ a:hover {
     flex-direction: column;
   }
 
+  .brand-logo {
+    height: 52px;
+  }
+
+  .brand-text {
+    font-size: 1.55rem;
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+
+  .nav-list {
+    gap: 0.65rem;
+  }
+
   .main {
     padding-top: 1.3rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .brand-logo {
+    height: 44px;
+  }
+
+  .brand-text {
+    font-size: 1.3rem;
   }
 }
 
