@@ -306,3 +306,9 @@ a:hover {
 .menu-hidden {
   display: none;
 }
+
+.footer-tiny {
+  font-size: 0.55rem;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
