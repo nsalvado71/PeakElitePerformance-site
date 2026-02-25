@@ -3,73 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peak Elite Performance | Training Insights for Endurance Athletes</title>
-  <meta name="description" content="Peak Elite Performance shares practical fitness and performance insights on HRV, training load, and recovery. Our app is currently in private testing.">
+  <title>PeakElite | Daily Readiness Forecast for Endurance Training</title>
+  <meta name="description" content="PeakElite forecasts daily ANS readiness and how much training load an endurance athlete can absorb, powered by a required morning resting baseline using Polar H10.">
+  <link rel="canonical" href="https://peakeliteperformance.com/">
+  <meta property="og:title" content="PeakElite | Daily Readiness Forecast">
+  <meta property="og:description" content="Forecast readiness and absorbable training load from a required morning baseline with Polar H10.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://peakeliteperformance.com/">
+  <meta property="og:image" content="https://peakeliteperformance.com/assets/toucan.png">
+  <meta property="og:site_name" content="PeakElite">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="header-inner">
-      <h1 class="logo">Peak Elite Performance</h1>
-      <nav aria-label="Main navigation">
-        <ul>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="PeakElite home">
+        <img class="brand-logo" src="assets/toucan.png" alt="PeakElite toucan logo">
+        <span class="brand-text">PeakElitePerformance</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="affiliate-disclosure.html">Disclosure</a></li>
-          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="our-apps.html">Our Apps</a></li>
+          <li class="menu-hidden"><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQ</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main class="main">
-    <section class="hero">
-      <h2>Smarter training decisions for real-world athletes</h2>
-      <p>Peak Elite Performance helps endurance athletes and coaches turn training data into clear daily action. We publish practical guides on heart-rate variability (HRV), intensity control, and recovery habits that support consistent progress.</p>
-      <p>Our app is currently in <strong>private testing</strong> as we refine the workflow with a small group of athletes.</p>
-    </section>
+    <div class="container">
+      <section class="hero">
+        <h1>Daily readiness forecast for smarter endurance training</h1>
+        <p class="lead">PeakElite App estimates how ready your body is today and how much training load it can absorve based on your autonomous nervous system. It evaluates more variable than any existing wearable device in the market. A morming measurement at rest is the required input</p>
+        <div class="badges">
+          <span class="badge">App in private testing</span>
+          <span class="badge">Morning baseline measurement</span>
+          <span class="badge">ANS Evaluation</span>
+          <span class="badge">Training Load recommendation</span>
+          <span class="badge">Polar H10 Accuracy</span>
+        </div>
+      </section>
 
-    <section class="section grid">
-      <article class="card">
-        <h3>Data you can use</h3>
-        <p>We focus on simple frameworks you can apply right away: readiness checks, session intent, and post-workout review.</p>
-      </article>
-      <article class="card">
-        <h3>Performance-first perspective</h3>
-        <p>Our content is built for training outcomes, not gadget hype. We compare tools and methods based on consistency and coaching value.</p>
-      </article>
-      <article class="card">
-        <h3>Transparent recommendations</h3>
-        <p>When we link to products, we disclose affiliate relationships clearly so readers can evaluate recommendations with context.</p>
-      </article>
-    </section>
+      <section class="section">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><strong>Morning baseline:</strong> complete a resting measurement after waking using Polar H10.</li>
+          <li><strong>Context:</strong> optionally add sleep, travel, heat, and recent training context.</li>
+          <li><strong>Model estimate:</strong> PeakElite predicts readiness and likely load tolerance for today.</li>
+          <li><strong>Guidance:</strong> get a practical suggestion to hold, reduce, or progress planned load.</li>
+        </ol>
+      </section>
 
-    <section class="card section">
-      <h3>Latest articles</h3>
-      <ul class="post-list">
-        <li><a href="posts/polar-h10-why-it-matters.html">Polar H10: Why chest-strap accuracy still matters</a></li>
-        <li><a href="posts/how-to-use-resting-hrv-safely.html">How to use resting HRV safely in your weekly plan</a></li>
-        <li><a href="posts/dfa-alpha1-explained.html">DFA a1 explained for aerobic threshold training</a></li>
-      </ul>
-    </section>
+      <section class="section">
+        <h2>Why the Toucan?</h2>
+        <p>Like a weather forecast helps you plan your day, the toucan represents a readiness forecast that helps you plan your training. It does not decide for you; it gives a clearer signal before you commit to load.</p>
+      </section>
 
-    <aside class="notice" aria-label="Affiliate disclosure summary">
-      <p><strong>Amazon Associates Notice:</strong> Peak Elite Performance participates in the Amazon Services LLC Associates Program. We may earn from qualifying purchases made through links on this site.</p>
-    </aside>
+      <section class="section">
+        <h2>What you get</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Readiness trend</h3>
+            <p>A clear directional trend across recent days, not a single-number obsession.</p>
+          </article>
+          <article class="card">
+            <h3>Confidence level</h3>
+            <p>An estimate of signal quality based on baseline consistency and context completeness.</p>
+          </article>
+          <article class="card">
+            <h3>Recommended load adjustment</h3>
+            <p>Simple training guidance such as maintain plan, reduce load, or keep intensity controlled.</p>
+          </article>
+        </div>
+      </section>
+
+
+
+    </div>
   </main>
 
   <footer class="site-footer">
-    <div class="footer-inner">
+    <div class="container footer-inner">
       <div class="footer-links">
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-        <a href="privacy.html">Privacy</a>
         <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+        <a href="privacy.html">Privacy</a>
       </div>
-      <p>General fitness information only, not medical advice.</p>
-      <p>&copy; 2026 Peak Elite Performance</p>
+      <p class="disclosure-line">As an Amazon Associate, PeakElite may earn from qualifying purchases.</p>
+      <p class="disclosure-line">General fitness information only; not medical advice; not a medical device.</p>
+      <p>&copy; 2026 PeakElite</p>
     </div>
   </footer>
 </body>

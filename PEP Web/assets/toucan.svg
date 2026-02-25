@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">PeakElite toucan logo placeholder</title>
+  <desc id="desc">Minimal toucan icon with dark body and bright beak.</desc>
+  <rect width="64" height="64" rx="12" fill="#ecf6fa"/>
+  <circle cx="28" cy="34" r="16" fill="#0f2430"/>
+  <ellipse cx="42" cy="29" rx="16" ry="8" fill="#f8a52b"/>
+  <ellipse cx="44" cy="31" rx="12" ry="5" fill="#f7cf62"/>
+  <circle cx="24" cy="30" r="3" fill="#ffffff"/>
+  <circle cx="24" cy="30" r="1.5" fill="#0f2430"/>
+  <path d="M18 42c4 4 10 5 15 2" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>
