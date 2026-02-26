@@ -549,8 +549,23 @@ a:hover {
   gap: 0.9rem;
 }
 
+.apps-design-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.apps-design-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem;
+}
+
 @media (max-width: 760px) {
   .apps-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .apps-design-row {
     grid-template-columns: 1fr;
   }
 }
