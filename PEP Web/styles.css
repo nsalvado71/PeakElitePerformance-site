@@ -379,3 +379,90 @@ a:hover {
 }
 
 
+
+
+.faq-card-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+}
+
+.faq-card {
+  padding: 1rem;
+}
+
+.faq-card h3 {
+  margin: 0 0 0.45rem;
+}
+
+.faq-card p {
+  margin: 0.2rem 0;
+}
+
+
+.faq-first-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+}
+
+.faq-polar-card {
+  border-color: #e2e8f0;
+  background: #f6f8fb;
+}
+
+.faq-note {
+  font-size: 0.74rem;
+  color: #6b7280;
+}
+
+@media (max-width: 760px) {
+  .faq-first-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.app-icon-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text);
+  gap: 0.35rem;
+}
+
+.app-icon-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+
+.app-icon-card span {
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  color: var(--brand);
+  text-align: center;
+}
+
+
+.icon {
+  display: inline-block;
+  margin-right: 0.2rem;
+}
+
+.microcopy {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 0.35rem;
+}
+
+.card .app-icon-img {
+  width: 70%;
+  margin: 0 auto;
+}

@@ -24,7 +24,7 @@
       <nav aria-label="Primary">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="our-apps.html">Our Apps</a></li>
+          <li><a href="our-apps.html">Apps</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="faq.html">FAQ</a></li>
         </ul>
@@ -36,34 +36,82 @@
     <div class="container">
       <section class="faq">
         <h1>Frequently Asked Questions</h1>
-        <div class="faq-item">
-          <h3>Why is Polar H10 required?</h3>
-          <p>PeakElite currently supports Polar H10 as the required sensor because RR/HRV quality is critical for reliable baseline readings.</p>
-        </div>
-        <div class="faq-item">
-          <h3>What does “readiness” mean here?</h3>
-          <p>Readiness is a performance-planning signal about likely training tolerance. It is not a diagnosis, treatment, or medical conclusion.</p>
-        </div>
-        <div class="faq-item">
-          <h3>When should I take the measurement?</h3>
-          <p>Measure immediately after waking, lying down in bed for 7 minutes, before caffeine or any other activity, to ensure an accurate autonomic nervous system (ANS) assessment.</p>
-          <p><em>Posture and stimulation strongly influence the autonomic nervous system. Measuring while lying down after waking improves consistency and day-to-day reliability.</em></p>
-        </div>
-        <div class="faq-item">
-          <h3>Can I use extra measurements?</h3>
-          <p>Yes. Additional measurements are optional and can improve context, but the morning resting baseline is the required anchor.</p>
-        </div>
-        <div class="faq-item">
-          <h3>Does this still work when traveling or training in heat?</h3>
-          <p>Yes, with context. Heat, altitude, and travel can shift your response, so PeakElite uses those notes to frame load guidance more conservatively.</p>
-        </div>
-        <div class="faq-item">
-          <h3>When does the app launch?</h3>
-          <p>PeakElite is currently in private testing. Public launch timing will be announced after model and workflow validation are complete.</p>
-        </div>
-        <div class="faq-item">
-          <h3>How is my data handled?</h3>
-          <p>We limit collection to what supports training guidance and baseline quality. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
+        <div class="faq-card-list">
+          <article class="card faq-card">
+            <h3>Why is PeakElite in private beta?</h3>
+            <p>PeakElite is in private beta to validate readiness forecasts, confidence scoring, and day-to-day load feedback using real-world, longitudinal data. Accurate ANS-based assessment depends on consistent measurements over time, not isolated readings.</p>
+            <p>The beta phase allows us to refine signal quality evaluation, historical trend analysis, and contextual weighting while closely monitoring performance across a diverse set of users. Features and outputs may evolve as models are improved and validated.</p>
+            <p>This approach ensures that insights provided by the app are grounded in reliable data, transparent confidence metrics, and meaningful long-term patterns before broader release.</p>
+          </article>
+
+          <article class="card faq-card" id="faq-beta-expectations">
+            <h3>What are the beta user expectations, and what do they receive in return?</h3>
+            <p><strong>Beta user expectations</strong></p>
+            <ul>
+              <li>Complete a daily morning resting measurement using the Polar H10.</li>
+              <li>Maintain consistent participation, as missed days reduce signal quality.</li>
+              <li>Add previous-day training data and relevant context (such as sleep or travel) when prompted.</li>
+              <li>Understand that features, models, and outputs may evolve during the beta phase.</li>
+              <li>Provide occasional feedback through the app when requested.</li>
+            </ul>
+            <p><strong>What beta users receive in return</strong></p>
+            <ul>
+              <li>Weekly summary insights based on longitudinal analysis of their data.</li>
+              <li>Early access to new features and ongoing refinements.</li>
+              <li>Direct influence on product development and validation.</li>
+              <li>Greater transparency into readiness trends and confidence metrics.</li>
+              <li><strong>Founder status</strong> recognition once the app becomes publicly available.</li>
+            </ul>
+          </article>
+
+          <div class="faq-first-row">
+            <article class="card faq-card">
+              <h3>Why is Polar H10 required?</h3>
+              <p>PeakElite relies on highly precise RR interval timing derived from ECG signals. The Polar H10 samples heart electrical signals at very high frequency (commonly reported around 1,000 Hz) and applies robust signal filtering, enabling millisecond-level heartbeat detection.</p>
+              <p>This level of timing precision and signal integrity is essential for reliable HRV and ANS analysis and cannot be consistently achieved with optical wrist sensors or most other heart rate chest straps.</p>
+            </article>
+
+            <article class="card faq-card">
+              <h3>When should I take the measurement?</h3>
+              <p>Measure immediately after waking, lying down in bed for 7 minutes, before caffeine or any other activity, to ensure an accurate autonomic nervous system assessment.</p>
+              <p class="faq-note"><em>Posture and stimulation strongly influence the autonomic nervous system. Measuring while lying down after waking improves consistency and day-to-day reliability.</em></p>
+            </article>
+          </div>
+
+          <article class="card faq-card faq-polar-card">
+            <p>🛒 <a href="YOUR_AMAZON_ASSOCIATES_LINK_HERE" target="_blank" rel="noopener noreferrer sponsored"><strong>Buy Polar H10 on Amazon</strong></a></p>
+            <p class="faq-note">Affiliate link — we may earn a commission at no cost to you.</p>
+          </article>
+
+          <article class="card faq-card">
+            <h3>Can I provide additional measurements?</h3>
+            <p>
+              Yes. Additional measurements can be included in the analysis, but they never replace the required morning resting measurement.
+              The morning baseline remains the primary reference for readiness assessment.
+            </p>
+            <p>
+              We welcome extra measurements—especially when the morning measurement is completed—as they may help us evaluate how ANS state changes in response to daily activities, training, and recovery later in the day.
+              At this stage, these additional inputs are considered supplementary and carry lower analytical weight.
+            </p>
+          </article>
+
+          
+
+          
+          <div class="faq-first-row">
+            <article class="card faq-card">
+            <h3>When does the app launch?</h3>
+            <p>
+              The public launch will be announced once model validation and workflow refinement are complete.
+            </p>
+          </article>
+
+            <article class="card faq-card">
+            <h3>How is my data handled?</h3>
+            <p>See our <a href="privacy.html">Privacy Policy</a> for details.</p>
+          </article>
+          </div>
+
         </div>
       </section>
     </div>
