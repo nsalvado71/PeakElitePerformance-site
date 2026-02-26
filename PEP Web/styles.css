@@ -65,6 +65,9 @@ a:hover {
   gap: 0.65rem;
   text-decoration: none;
   color: var(--text);
+  position: relative;
+  z-index: 20;
+  pointer-events: auto;
 }
 
 .brand-logo {
@@ -73,6 +76,8 @@ a:hover {
   flex: 0 0 auto;
   display: block;
   margin-bottom: 8px;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 .brand-text {
@@ -354,6 +359,8 @@ a:hover {
 .header-inner .nav-list {
   margin-top: 0;
   margin-bottom: 8px;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 @media (max-width: 760px) {
@@ -517,15 +524,15 @@ a:hover {
 
 
 .btn-secondary {
-  background: #e9eef4;
-  color: #1f3f54;
-  border: 1px solid #cfd9e3;
+  background: #e9f7ec;
+  color: #1f5a33;
+  border: 1px solid #cfe9d7;
 }
 
 .btn-secondary:hover {
-  background: #dbe5ef;
-  color: #173547;
-  border-color: #c3d0dc;
+  background: #def2e4;
+  color: #184a2a;
+  border-color: #b9dcc5;
 }
 
 
@@ -605,4 +612,10 @@ a:hover {
 .faq-cta-btn {
   padding: 0.4rem 0.7rem;
   font-size: 0.88rem;
+}
+
+
+.header-inner nav {
+  position: relative;
+  z-index: 5;
 }
