@@ -466,3 +466,143 @@ a:hover {
   width: 70%;
   margin: 0 auto;
 }
+
+
+.cta-main {
+  background: #f6f8fb;
+  border: 1px solid #d9e2ec;
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+  margin: 0 0 1rem 0;
+}
+
+.cta-main h2 {
+  margin: 0 0 0.45rem;
+}
+
+.cta-main p {
+  margin: 0 0 0.75rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 0.5rem 0.85rem;
+}
+
+.btn-primary {
+  background: var(--brand);
+  color: #ffffff;
+  border: 1px solid var(--brand);
+}
+
+.btn-primary:hover {
+  background: var(--brand-deep);
+  border-color: var(--brand-deep);
+  color: #ffffff;
+}
+
+@media (max-width: 430px) {
+  .cta-main {
+    padding: 0.9rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+.btn-secondary {
+  background: #e9eef4;
+  color: #1f3f54;
+  border: 1px solid #cfd9e3;
+}
+
+.btn-secondary:hover {
+  background: #dbe5ef;
+  color: #173547;
+  border-color: #c3d0dc;
+}
+
+
+.apps-layout {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 0.9rem;
+  align-items: start;
+}
+
+.apps-right-stack {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
+}
+
+@media (max-width: 760px) {
+  .apps-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.beta-form {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 1.1rem;
+}
+
+.beta-form h1 {
+  margin: 0 0 0.5rem;
+}
+
+.beta-form form {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 0.85rem;
+}
+
+.beta-form label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+.beta-form input,
+.beta-form select,
+.beta-form textarea {
+  width: 100%;
+  border: 1px solid #cfd8e3;
+  border-radius: 10px;
+  padding: 0.55rem 0.65rem;
+  font: inherit;
+  color: var(--text);
+  background: #fff;
+}
+
+.beta-form textarea {
+  resize: vertical;
+}
+
+.form-microcopy {
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.form-note {
+  margin-top: 0.8rem;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
+
+.faq-cta-btn {
+  padding: 0.4rem 0.7rem;
+  font-size: 0.88rem;
+}
